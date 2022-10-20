@@ -9,6 +9,9 @@ const Landing = () => {
       <Link to="/the-well-styled-things">David's Things</Link><br/>
       <Link to="/the-silly-things">Hunter's Things</Link><br/>
       <Link to="/the-tiffany-things">Tiffany's Things</Link><br/>
+      <Link to="/crafts">Carol's Things</Link><br/>
+      <Link to="/the-zain-things">Zain's Things</Link>
+      <br/>
     </>
   )
 }
