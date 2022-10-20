@@ -5,6 +5,7 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Crafts from './pages/Crafts/Crafts'
 import Landing from './pages/Landing/Landing'
 import LindsaysThings from './pages/LindsaysThings/LindsaysThings'
+import TiffanyThings from './pages/TiffanyThings/TiffanyThings'
 import ZainsThings from './pages/ZainsThings/ZainThings'
 
 const App = () => {
@@ -56,6 +57,7 @@ const App = () => {
       image: 'https://i.imgur.com/q9zgcaP.jpg',
       attributes: ['pastry?', 'food?', 'edible?', 'Horrible when toasted!'],
     },
+
   ]
 
   const huntersThings = [
@@ -64,6 +66,13 @@ const App = () => {
       image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
+  ]
+    const tiffanyThings = [
+      {
+        name: "chapstick",
+        image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+        attributes: ["moisturizng", "cheap", "lightweight", "good in winter"],
+      },
   ]
 
   const lindsaysThings = [ 
@@ -108,6 +117,12 @@ const App = () => {
       <Route
       path="/lindsays-things"
       element={<LindsaysThings things={lindsaysThings} />}
+      />
+      <Route
+        path="/the-tiffany-things"
+        element={<TiffanyThings things={tiffanyThings} />}
+      />
+      <Route
         path="/crafts"
         element={<Crafts things={carolsThings} />}
       />
