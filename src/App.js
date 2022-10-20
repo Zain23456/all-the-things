@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import LindsaysThings from './pages/LindsaysThings/LindsaysThings'
 
 const App = () => {
   const bensThings = [
@@ -35,6 +36,7 @@ const App = () => {
     },
   ]
 
+
   const davidsThings = [
     {
       name: 'waffle',
@@ -62,6 +64,14 @@ const App = () => {
     },
   ]
 
+  const lindsaysThings = [ 
+    {
+    name: "camping",
+    image: "https://images.unsplash.com/photo-1576176539998-0237d1ac6a85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    attributes: ["outside", "relaxing"]
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -77,6 +87,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+      path="/lindsays-things"
+      element={<LindsaysThings things={lindsaysThings} />}
       />
     </Routes>
   )
