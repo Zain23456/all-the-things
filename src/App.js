@@ -70,7 +70,7 @@ const App = () => {
       name: "crafts",
       image: "https://img.crafts.png",  
       attributes: ["creative", "fun", "beautiful"],
-       },
+    },
   ]
 
   const zainsThings = [
@@ -101,7 +101,7 @@ const App = () => {
         path="/crafts"
         element={<Crafts things={carolsThings} />}
       />
-   <Route
+      <Route
 
         path="/the-zain-things"
         element={<ZainsThings things={zainsThings} />}
